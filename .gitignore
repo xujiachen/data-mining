@@ -1,0 +1,21 @@
+.vscode/
+.idea/
+*.pyc
+*.log
+nohup.out
+
+#config.py
+local_config.py
+
+*.txt
+
+
+data/*
+data/chinese-poetry/*
+data/Poetry/*
+data/poetry-master/*
+data/shici/*
+
+
+# 本地文件
+local/*
