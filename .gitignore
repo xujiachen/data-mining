@@ -9,7 +9,7 @@ nohup.out
 local_config.py
 
 *.txt
-
+*.jpg
 
 data/*
 data/chinese-poetry/*
