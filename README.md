@@ -10,10 +10,11 @@
 
 ##  目录说明     
 ├── data  //数据文件夹         
-├── data_mning //数据挖掘项目目录      
-│   └── poetry_mining  //古诗词数据挖掘       
+├── data_mining //数据挖掘项目目录   
+│    ├── utils            
+│    └── data_helper.py  //数据处理文件         
 ├── docs  //各种文档  
-│   └── 古诗词数据挖掘调研.md   
+│    └── 古诗词数据挖掘调研.md   
 ├── tests  //单元测试  
 ├── .gitignore  //git忽略文件        
 ├── eda.ipynb  //Exploratory Data Analysis        

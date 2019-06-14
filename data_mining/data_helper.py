@@ -93,12 +93,12 @@ def preprocess():
         data_dict["作者"].append(poem["author"])
         data_dict["内容"].append(poem["content"])
     poem_df = pd.DataFrame.from_dict(data_dict)
+    poem_df["内容"] = poem_df["内容"].replace("<.*?>|—", "", regex=True)
     gc.collect()
     data_df = pd.concat([data_df, poem_df])
     # https://jamesrledoux.com/code/drop_duplicates
     data_df.drop_duplicates(subset=["内容"], keep="first", inplace=True)
     data_df.dropna(subset=['内容'], inplace=True)
-    data_df["内容"] = data_df["内容"].replace("<.*?>|—", "", regex=True)
     data_df["作者"] = data_df["作者"].replace({"陸游": "陆游"})
     data_df["朝代"] = data_df["朝代"].replace({
         "秦": "先秦",
