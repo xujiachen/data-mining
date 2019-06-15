@@ -10,6 +10,9 @@ local_config.py
 
 *.txt
 *.jpg
+*.png
+*.model
+
 
 data/*
 data/chinese-poetry/*

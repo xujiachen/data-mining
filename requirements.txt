@@ -2,3 +2,5 @@ gensim
 numpy
 tensorflow
 keras
+pydot
+graphviz
